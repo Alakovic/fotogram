@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogram</title>
+    <link rel="icon" href="./assets/icon/favicon_fotogram.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body onload="render()">
+    <header>
+        <div class="logo">
+            <img src="./assets/icon/favicon_fotogram.png" alt="logo">
+            <span>Fotogram</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="headline">
+            <h1>My personal photo album</h1>
+        </div>
+
+        <div  id="overlay" class="overlay">
+            <div class="image-box">
+                <span id="closeBtn" class="close">&times;</span>
+                <h2 id="overlayTitle">Image Title</h2>
+                <img id="overlayImg" class="overlay-content" src="" alt="Image Preview">
+                <div class="navigation">
+                    <span id="prevBtn" class="arrow-left"><i class="fas fa-chevron-left"></i></span>
+                    <span id="imageCounter" class="counter">1/10</span>
+                    <span id="nextBtn" class="arrow-right"><i class="fas fa-chevron-right"></i></span>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="content" id="content">
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <p>&copy;Made by Zeljko Alakovic</p>
+    </footer>
+
+   
+
+</body>
+    <script src="./script/script.js"></script>
+</html>
